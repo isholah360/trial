@@ -1,0 +1,124 @@
+.App {
+
+}
+*{box-sizing: border-box;
+  padding:0;
+margin: 0;}
+/* .navs{
+  display: flex;
+
+} */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightgray;
+  height: 12vh;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+
+}
+nav .logo{
+  margin-left: 2rem;
+  width: 5rem;
+}
+li{
+  margin: 0 3rem;
+  text-decoration: none;
+}
+
+li Link{
+  text-decoration: none;
+
+}
+nav .bars{
+  display: none;
+}
+
+@media screen and (max-width: 720px){
+
+  nav .bars{
+    display: block;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  ul{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 12vh;
+    gap:1.5rem;
+    margin-right: 0rem;
+    height: 50%;
+    background-color: lightgray;
+    width: 50%;
+
+  }
+
+  .links{
+    display: none;
+
+  }
+
+  .links.active{
+   display: block;
+  }
+
+}
+
+.circle{
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background: green;
+}
+
+.rect{
+  height: 4rem;
+  width: 6rem;
+  background: green;
+}
+.links ul li a{
+  text-decoration: none;
+  position: absolute;
+  margin-top: -0.5rem;
+padding: 0.5rem 1.2rem;
+
+}
+.links ul li a:hover{
+  background-color: lightblue;
+
+
+}
+.unique .sub-menu{
+  position: absolute;
+  margin: 2rem -1rem;
+  display: none;
+}
+.unique .sub-menu ul{
+ display: block;
+  margin-top: -0.4rem;
+
+}
+.unique .sub-menu ul li{
+ padding: 0.8rem 1.5rem;
+ background: lightgray;
+
+}
+.unique:hover .sub-menu{
+  display: block;
+  transition: 2s;
+  transform: translateX();
+}
+.sub-menu ul li:hover{
+  background-color: lightblue;
+
+}
